@@ -1,0 +1,17 @@
+[Unit]
+Description=GNS3 server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# ВАЖНО: Замените ubuntu на ваше реальное имя пользователя, если оно отличается
+User=ubuntu
+Group=ubuntu
+ExecStart=/usr/bin/gns3server --host 0.0.0.0
+Restart=on-failure
+RestartSec=5
+LimitNOFILE=16384
+
+[Install]
+WantedBy=multi-user.target
