@@ -21,7 +21,7 @@ UDP: Версия GNS3 должна быть одинаковой на серв�
 ## Быстрый старт
 1. Склонируйте репозиторий на Ubuntu Server:
    ```bash
-   git clone https://github.com/zaki135199/gns3-server-setup.git
+   git clone https://github.com/kub19993/gns3-server-setup.git
    cd gns3-server-setup
 
 
